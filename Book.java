@@ -64,6 +64,10 @@ class Book
     
     //Print all stored info
     public void printDetails(){
-        System.out.println("Title: " + title + "\nAuthor: " + author + "\nPages: " + pages);
+        System.out.print("Title: " + title + "\nAuthor: " + author + "\nPages: " + pages + "\nReference number: ");
+        if (refNumber.length() > 0)
+            System.out.println(refNumber);
+        else
+            System.out.println("ZZZ");
     }
 }
