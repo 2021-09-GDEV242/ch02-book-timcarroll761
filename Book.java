@@ -31,42 +31,42 @@ class Book
     }
 
     // Add the methods here ...
-    // Return the author
+    // Return the author 2.83
     public String getAuthor(){
         return author;
     }
     
-    //Return the title
+    //Return the title 2.83
     public String getTitle(){
         return title;
     }
     
-    //Return the number of pages
+    //Return the number of pages 2.85
     public int getPages(){
         return pages;
     }
     
-    //Return the reference "number" string
+    //Return the reference "number" string 2.88
     public String getRefNumber(){
         return refNumber;
     }
     
-    //Return the number of times this book was checked out
+    //Return the number of times this book was checked out 2.91
     public int getBorrowed(){
         return borrowed;
     }
     
-    //Increment the borrow counter
+    //Increment the borrow counter 2.91
     public void borrow(){
         borrowed++;
     }
     
-    //Returns whether or not this is a course textbook
+    //Returns whether or not this is a course textbook 2.92
     public boolean isCourseText(){
         return courseText;
     }
     
-    //Set the reference "number" string
+    //Set the reference "number" string 2.88 2.90
     public void setRefNumber(String ref){
         if (ref.length() >= 3)
             refNumber = ref;
@@ -74,17 +74,17 @@ class Book
             System.out.println("The entered reference number is too short.");
     }
     
-    //Print the author
+    //Print the author 2.84
     public void printAuthor(){
         System.out.println("The author is " + author);
     }
     
-    //Print the title
+    //Print the title 2.84
     public void printTitle(){
         System.out.println("The title is " + title);
     }
     
-    //Print all stored info
+    //Print all stored info 2.87 2.89 
     public void printDetails(){
         System.out.print("Title: " + title + "\nAuthor: " + author + "\nPages: " + pages + "\nReference number: ");
         if (refNumber.length() > 0)
