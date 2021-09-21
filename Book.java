@@ -27,26 +27,31 @@ class Book
     // Add the methods here ...
     // Return the author
     public String getAuthor(){
-        return this.author;
+        return author;
     }
     
     //Return the title
     public String getTitle(){
-        return this.title;
+        return title;
     }
     
     //Return the number of pages
     public int getPages(){
-        return this.pages;
+        return pages;
     }
     
     //Print the author
     public void printAuthor(){
-        System.out.println("The author is " + this.author);
+        System.out.println("The author is " + author);
     }
     
     //Print the title
     public void printTitle(){
-        System.out.println("The title is " + this.title);
+        System.out.println("The title is " + title);
+    }
+    
+    //Print all stored info
+    public void printDetails(){
+        System.out.println("Title: " + title + "\nAuthor: " + author + "\nPages: " + pages);
     }
 }
